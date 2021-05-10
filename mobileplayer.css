@@ -21,9 +21,9 @@
     }
     #thumbnail{
         padding:0 10px;
-        margin-bottom:25px;
+        margin-bottom:35px;
     }
-    #rangetime,.fav,#volume,.fa-random,.fa-music,#submitbutton,.fa-info-circle{
+    #rangetime,.fav,#volume,.fa-random,.fa-music,.fa-info-circle{
         display:none !important;
     }
     .fa-info-circle{
@@ -31,7 +31,7 @@
         padding:0;
     }
     #songtitle{
-        font-size: 14px;
+        font-size: 16px;
     }
     #controls i{
         margin:2px;

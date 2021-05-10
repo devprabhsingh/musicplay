@@ -1,0 +1,65 @@
+    #songlist{
+        width:100%;
+    }
+    #player{
+        height:10vh;
+        position: absolute;
+        bottom:-7px;
+        display:flex;
+        flex-direction: row;
+        width:100%;
+        
+    }
+    #songs{
+        height:72vh;
+    }
+    #thumbnail img{
+        height:50px;
+        width:50px;
+        border-radius:50%;
+
+    }
+    #thumbnail{
+        padding:0 10px;
+        margin-bottom:25px;
+    }
+    #rangetime,.fav,#volume,.fa-random,.fa-music,#submitbutton,.fa-info-circle{
+        display:none !important;
+    }
+    .fa-info-circle{
+        margin-left:5px !important;
+        padding:0;
+    }
+    #songtitle{
+        font-size: 14px;
+    }
+    #controls i{
+        margin:2px;
+        font-size: 15px;
+        padding:5px;
+        border-radius:50px;
+    }
+    #controls i:hover{
+        color:crimson !important;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #musicplayer{
+        height:10vh;
+        width:50%;
+    }
+
+    #logo{
+        width:50%;
+    }
+    #searchinput{
+        width:100%;
+    }
+    .fa-angle-up{
+        display: inline !important;
+    }
+    .fa-angle-down{
+        display:none;
+    }
+
+    /* mobile styles for header*/
+   

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* styles for header------------------------------------*/
+header{
+    height:10vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background:black;
+    color:crimson;
+    font-size:25px;
+}
+#searchbox{
+    width:40%;
+}
+#searchinput{
+    width:50%;
+    height:4vh;
+    outline:none;
+}
+#submitbutton{
+    height:4vh;
+    margin-left: 10px;
+    outline:none;
+    padding:4px;
+    cursor: pointer;
+    width:15%;
+    font-weight: bold;
+    background:crimson;
+    color:white;
+    border:2px solid white;
+}
+#submitbutton:hover{
+    background-color: white;
+    color:crimson;
+    border-color:crimson;
+}
+#logo{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    width:11%;
+}
+header img{
+    color:white;
+    height:35px;
+    width:35px;
+}
+
+
+main{
+    width:100%;
+    margin:auto;
+    display: flex;
+    height:90vh;
+}
+
+
+
+/* styles for songslist---------------------------*/
+#songlist{
+    width:70%;
+    margin-left:2px;
+    margin-right:2px;
+}
+#headbar{
+    line-height: 8vh;
+    padding:0 20px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+}
+#headbar button{
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    border:none;
+    font-size: 17px;
+    font-weight: bold;
+    outline:none;
+    background:crimson;
+    color:white;
+    border:2px solid white;
+    padding:5px;
+    
+}
+#headbar button:hover{
+    background:white;
+    color:crimson;
+    border:2px solid crimson;
+}
+#headbar button i{
+    padding:0 5px;
+}
+#songsCount{
+    font-style: italic;
+    color:white;
+}
+#songs{
+    overflow-y: auto;
+    height:82vh;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+
+.song{
+    background-color: whitesmoke;
+    padding:10px;
+    margin:1px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+.song .fa-heart{
+    cursor:pointer;
+}
+.fa-heart:hover{
+    color:crimson;
+}
+.song:hover{
+    background-color: #e3e2df;
+    color:crimson;
+}
+
+/* styles for player-----------------------------------*/
+#player{
+    position: relative;
+    height:90vh;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0,0.8);
+    align-items: center;
+    justify-content: space-around;
+    padding:30px 0;
+}
+.fa-angle-down{
+    color:white;
+    border-radius: 50px;
+    padding:5px 10px;
+}
+.fa-angle-down:hover{
+    color:crimson;
+    background:rgba(0, 0, 0,0.6);
+}
+#thumbnail img{
+    margin-top:30px;
+    height:200px;
+    width:200px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+#musicplayer{
+    display: flex;
+    width:90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:35vh;
+}
+.fav{
+    margin-top:15px;
+    font-size:30px;
+    color:white;
+    cursor: pointer;
+}
+
+#rangetime{
+    width:100%;
+    display: flex;
+}
+#rangetime p{
+    padding:0 10px;
+    color:white;
+}
+#rangebar{
+    margin-top: 6px;
+    width:85%;
+}
+.fa-random{
+    margin-right:25px !important;
+}
+#controls i{
+    font-size: 30px;
+    color:white;
+    cursor: pointer;
+    margin:0 10px;
+    position: relative;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    cursor: pointer;
+}
+#songtitle{
+    color:white;
+    font-size: 22px;
+
+}
+.fa-music{
+    padding:5px;
+    color:crimson;
+}
+#tooltip{
+    width:65px;
+    color:white;
+    background:rgba(0, 0, 0, 0.6);
+    padding:5px;
+    font-size: 12px;
+    position: absolute;
+    top:35px;
+    left:-20px;
+    border-radius: 7px;
+    display: none;
+}
+#volume{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.fa-info-circle{
+    margin-left:25px !important;
+}
+.fa-volume-up,.fa-volume-mute{
+    color:white;
+    padding:5px;
+    cursor:pointer;
+}
+
+#music{
+    display: none;
+}
+/* styles taken from w3schools */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: crimson;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: crimson;
+    cursor: pointer;
+  }
+/*------------------------*/
+
+/* info box styles */
+#infobox{
+    font-family: cursive;
+    font-size: 17px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:350px;
+    width:350px;
+    top:65px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-weight: bold;
+    display: none;
+}
+#infobox p{
+    padding:10px;
+    animation:appear 0.5s ease-in-out;
+}
+#infobox span{
+    color:crimson;
+}
+
+/* mobile player styles */
+#mobile-player{
+    display:flex;
+    height:10vh;
+
+}
+@keyframes appear{
+    from{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    #logo{
+        width:50%;
+    }
+    #searchinput{
+        width:100%;
+    }
+}

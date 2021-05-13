@@ -322,7 +322,12 @@ input[type="range"] {
     #logo{
         width:50%;
     }
-    #searchinput{
-        width:100%;
+    #searchbox{
+        display:flex;
+        justify-content: space-between;
+    }
+    #submitbutton{
+        margin-left: 0;
+        width:20%;
     }
 }
